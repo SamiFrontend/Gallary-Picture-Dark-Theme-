@@ -1,0 +1,488 @@
+html, body , ul{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+
+
+* {
+    font-family: 'DM Serif Display', serif
+}
+
+
+body{
+    background: #0f0f0f;
+    scroll-behavior: smooth;
+}
+
+
+
+::-webkit-scrollbar{
+     width: 10px ;
+     background: white ;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(107, 107, 107) ;
+    border-radius: 17px  ;
+}
+
+
+.header{
+    height: 100vh ;
+    font-size: 10px ;
+    padding: 4em 5em ;
+    color: white ;
+    
+}
+
+.logo{
+    font-family:'DM Serif Display', serif;
+    color: white ;
+    text-decoration: none ;
+}
+
+.icons{
+    position: relative;
+    top: 3px;
+    left: 0;
+    width: 15px ;
+    
+}
+
+.icons > i {
+    position: absolute ;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+.nav-fixed{
+    position: fixed ;
+    width: 100% ;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: inherit;
+    z-index: 1500;
+    mix-blend-mode: difference;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100% ;
+}
+
+.navbar > *{
+    font-size: 1.8em ;
+}
+
+.d-none { display: none ;}
+
+.links{
+    position: fixed;
+    width: 100% ;
+    height: 100% ;
+    background: #0f0f0f ;
+    z-index: 1000;
+    font-size: 10px ;
+    
+}
+
+.links ul{
+    list-style: none ;
+    margin-top: 4% ;
+    overflow-y: hidden;
+
+}
+
+.links ul li{
+    padding: 0 1em;
+    font-size: 9em ;
+    margin: .5em  ;
+}
+
+
+
+
+.links li > a{
+    text-decoration: none ;
+    -webkit-text-stroke: 1px white ;
+    color: transparent ;
+    transition: color .5s ;
+    text-transform: uppercase;
+}
+
+.links li > a:hover{
+    color: white ;
+    -webkit-text-stroke: 0 ;
+}
+
+ 
+
+.content-middle{
+    width: 100% ;
+    position: relative;
+}
+
+.header .img{
+    width: 37em ;
+    height: 47em ;
+    margin: 14em auto;
+    filter: grayscale(10);
+}
+
+.img img{
+    width: 100% ;
+    height: 100% ;
+    object-fit: cover;
+}
+
+.content-middle h1{
+    position: absolute ;
+    top: 40%;
+    left:0;
+    font-size: 5rem ;
+    width: inherit;
+    text-align: center ;
+    font-weight: 400;
+    mix-blend-mode: difference;
+}
+
+
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.icons-social{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px ;
+}
+
+.icons-social > i{
+  margin: .5em 0 ;
+
+}
+
+.social a{
+    font-size: 16px ;
+    color: white ;
+    margin-top: 4.3em ;
+}
+
+
+/*  About */
+
+.info-text{
+    width: 100% ;
+    background: white ;
+    font-size: 10px ;
+}
+
+
+.container{
+    padding: 4em 10vw ;
+}
+
+.info-text .container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around ;
+}
+
+.name-part{
+    font-size: 9em ;
+    box-sizing: border-box;
+    padding-right: 1em ;
+    text-transform: uppercase;
+}
+
+.para-about > * {
+    font-family: 'Poppins', sans-serif;
+}
+
+.para-about{
+ 
+ font-size: 10px ;
+ max-width: 60em ;
+ min-width: 30em; 
+}
+
+.para-about h4{
+    font-size: 2em ;
+    
+}
+
+.para-about p{
+    font-size: 1.3em ;
+}
+
+
+.para-about button{
+    border: 1px solid #0f0f0f;
+    background: none ;
+    padding: .5em 1.5em;
+    margin: 10px 0; 
+    outline: none ;
+    cursor: pointer ;
+    transition: color 1s , background-color 1s ;
+}
+
+.para-about button:hover{
+ background: #0f0f0f;
+ color: white ;
+}
+
+
+.capture{
+    color: white ;
+    font-size: 10px ;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.text{
+    order: 2;
+}
+
+.text h1{
+    font-size: 8em;
+    margin: 0;
+    font-weight:400 ;
+    letter-spacing: 2px ;
+}
+.text p{
+    font-size: 1.3em;
+    margin: 0;
+    font-family: 'Poppins' , sans-serif;
+    color:#c0c0c075;
+}
+
+.capture i{
+    font-size: 15em ;
+    margin-top: 5px ;
+    padding: 0 5vw ;
+}
+
+
+
+.info-text:last-of-type .name-part{
+ font-size: 6em ;
+ margin-top: 10px ;
+
+}
+
+.info-social{
+    font-size: 10px ;
+    margin: auto 17vw;
+    padding-bottom: 3em ;
+}
+
+.info-social a{
+    text-decoration: none ;
+    color: black ;
+    padding: 0 10px ;
+    font-size: 1.4em ;
+}
+
+/* -----------  grid picture  --------------- */
+
+.pictures{
+    display: grid;
+    grid-template-columns: repeat(2 , 50%);
+    grid-auto-rows: auto ;
+    margin: 4em 0 ;
+    
+}
+
+.pic img{
+    width: 100% ;
+    height: 100% ;
+    filter: grayscale(10);
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 705px ){
+    .info-text .container{
+        display: block ;
+    }
+
+
+    .links ul{
+        display: flex;
+        justify-content: start ;
+        flex-direction: column;
+        margin-top: 20% ;
+
+    }
+
+    .links ul li{
+        font-size: 6.5em ;
+        padding-left: 0;
+        
+    }
+
+
+    .pictures {
+        grid-template-columns: 100% ;
+    }
+}
+
+
+@media (max-width: 500px ){
+    .content-middle .img{
+        width: 70vw;
+        height: 90vw;
+    }
+
+    .content-middle h1{
+        font-size: 10vw ;
+        bottom: 0 ;
+        top: 60% ;
+    }
+
+    .info-text {
+        font-size: 6px ;
+    }
+
+    .capture{
+        font-size: 6px ;
+    }
+}
+
+/* 
+ @keyframes VisibleItem {
+     0%{
+         transform: translateY(80px);
+         opacity: 0;
+     }
+
+     50%{
+         opacity: 0;
+         transform: translateY(50px);
+
+     }
+
+     100%{
+         transform: translateY(0);
+         opacity: 1  ;
+     }
+ }
+
+
+ .hidden {  
+    animation: hiddenIcon 1s ease-out ;
+    animation-fill-mode: forwards ;
+}
+
+.show {
+    opacity: 0;
+    animation: showIcon 1s ease-out ;
+    animation-fill-mode: forwards ;
+    animation-delay: 1s;
+}
+
+
+ @keyframes hiddenIcon{
+    0% {
+        opacity: 1;
+      }     
+    100% {
+        opacity: 0;
+     }
+ }
+
+
+ 
+ @keyframes showIcon{
+    0% {
+        opacity: 0;
+      }     
+    100% {
+        opacity: 1;
+     }
+ }  */
+
+/* 
+ 
+ @keyframes showIcon{
+    0% {
+        opacity: 0;
+      } 
+      
+      
+    50% {
+        opacity: .5 ;
+    }
+    100% {
+        opacity: 1;        
+    }
+ } */
+
+
+ .fadeInner {
+     opacity: 0;
+     animation: fadeInner 2.1s cubic-bezier(.25,.1,.25,1) forwards ;
+ }
+
+ .fadeOuter{
+    animation: fadeOuter 1.5s ease-in-out forwards;
+ }
+
+ @keyframes fadeInner {
+     0%{
+         opacity: 0;
+         transform: translateY(400px);
+     }
+
+     50%{
+        opacity: .5;
+        /* transform: translateY(60px); */
+     }
+
+     100%{
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+
+ 
+ @keyframes fadeOuter {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        opacity: .4;
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(400px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
